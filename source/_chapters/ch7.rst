@@ -78,7 +78,7 @@ En Python / Matplotlib:
 	plt.title(u'Mi gráfica')
 	plt.show()
 
-.. figure:: src/ch7/img_5_1.png
+.. figure:: src/ch7/img_5_1.PNG
 	:scale: 80%
 
 
@@ -111,7 +111,7 @@ Matplotlib funciona exactamente igual, puede especificar de esa forma un color y
 	plt.show()
 
 
-.. figure:: src/ch7/img_5_2.png
+.. figure:: src/ch7/img_5_2.PNG
 	:scale: 80%
 
 
