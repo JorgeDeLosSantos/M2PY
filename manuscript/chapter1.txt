@@ -1,8 +1,6 @@
-Los primeros pasos
-==================
+# Los primeros pasos
 
-¿Qué con MATLAB?
-----------------
+## ¿Qué con MATLAB?
 
 Para comenzar, este texto no tiene la finalidad de "despotricar" contra nadie, así que vamos a ser *justos* con los 
 *pros* y *contras* de cada lenguaje. MATLAB es un lenguaje de programación de alto nivel, interpretado, multiparadigma*, 
@@ -18,8 +16,7 @@ suele ser considerado como "un poco lento", pero no obstante, para la mayoría d
 la capacidad de agregar librerías externas escritas en lenguajes compilados como C y Fortran.
 
 
-¿Por qué Python?
-----------------
+## ¿Por qué Python?
 
 Python es un lenguaje desarrollado a finales de los ochenta y cuyas primeras versiones aparecieron al principio de los
 noventa. Es un lenguaje interpretado, de tipado dinámico, multiplataforma, multiparadigma, con una sintaxis sencilla y
@@ -33,10 +30,9 @@ Python se distribuye con una librería estándar, que por sí misma no proporcio
 aplicaciones en el ámbito cientifico / ingeniería. Por lo cual es necesario instalar de forma independiente dichas 
 librerías, y de las cuales se hablará en la siguiente sección.
 
-¿Qué necesitamos?
------------------
+## ¿Qué necesitamos?
 
-Desde luego tener Python instalado, para ello puede dirigirse a la página de descargas (https://www.python.org/downloads/)
+Desde luego tener Python instalado, para ello puede dirigirse a la página de [descargas](https://www.python.org/downloads/)
 y seguir los procedimientos que ahí se indican de acuerdo al sistema operativo que disponga.
 
 El tema de las versiones 2.x y 3.x de Python es un punto de "discusión" muy común, lo cierto es que sería más recomendable 
@@ -54,28 +50,27 @@ Enseguida una breve descripción de las librerías listadas.
 
 **NumPy**
 
-Pagina del proyecto: http://www.numpy.org
+Pagina del proyecto: [http://www.numpy.org](http://www.numpy.org)
 
 NumPy es una biblioteca extensa que provee los objetos numéricos bases para trabajar con vectores y matrices 
 de forma eficiente. 
 
 **SciPy**
 
-Página del proyecto: http://www.scipy.org
+Página del proyecto: [http://www.scipy.org](http://www.scipy.org)
 
 SciPy es una biblioteca que contiene múltiples algoritmos para aplicaciones en ingeniería, matemáticas y todo 
 el ámbito científico. Utiliza NumPy como base.
 
 **Matplotlib**
 
-Página del proyecto: http://matplotlib.org
+Página del proyecto: [http://matplotlib.org](http://matplotlib.org)
 
 Matplotlib es una librería que proporciona herramientas de visualización gráfica en 2D de gran calidad, y una 
 capacidad aceptable para 3D. Es muy notorio también que en cierta medida está inspirada en MATLAB, teniendo
 una sintaxis muy similar, lo cual ayudará mucho en esta *transición*.
 
-====================
 
 Para instalar las librerías puede acceder a las páginas de cada proyecto y proceder conforme se especifica
 en la sección de descarga correspondiente. O bien utilizar herramientas de instalación para módulos de Python
-como ``pip`` o ``easy_install``.
+como `pip` o `easy_install`.

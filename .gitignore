@@ -160,3 +160,9 @@ TSWLatexianTemp*
 
 # Build folder
 /build/
+
+# TeX version folder
+_tex_version_
+
+# Python files
+*.py
