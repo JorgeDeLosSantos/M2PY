@@ -58,12 +58,12 @@ end
 En Python:
 
 ```python
-	def es_par(n):
-	    if not(n%2):
-	        r = True
-	    else:
-	        r = False
-	    return r
+def es_par(n):
+    if not(n%2):
+        r = True
+    else:
+        r = False
+    return r
 ```
 
 La forma de llamar la función es exactamente la misma:
@@ -166,18 +166,18 @@ Las funciones en Python permiten el uso de *keyword arguments*. Para mostrar est
 función `info_contacto` que mostrará en pantalla información de un contacto (nombre, dirección, ...):
 
 ```python
-	def info_contacto(**kwargs):
-	    nombre = kwargs.get('nombre')
-	    direccion = kwargs.get('direccion')
-	    telefono = kwargs.get('telefono')
-	    email = kwargs.get('email')
-	    info = """
-	    Nombre : {}
-	    Dirección : {}
-	    Teléfono : {}
-	    E-mail : {}
-	    """.format(nombre,direccion,telefono,email)
-	    print info
+def info_contacto(**kwargs):
+    nombre = kwargs.get('nombre')
+    direccion = kwargs.get('direccion')
+    telefono = kwargs.get('telefono')
+    email = kwargs.get('email')
+    info = """
+    Nombre : {}
+    Dirección : {}
+    Teléfono : {}
+    E-mail : {}
+    """.format(nombre,direccion,telefono,email)
+    print info
 ```
 
 Revisemos un poco: para indicar que se utilizarán *keyword arguments* es necesario anteceder el nombre del parámetro 
@@ -199,10 +199,10 @@ Por lo cual para acceder al valor de un determinado argumento puede utilizarse e
 ejemplo:
 
 ```python
-	valor1 = kwargs.get('arg1')
-	valor2 = kwargs.get('arg2')
-	valor3 = kwargs.get('arg3')
-	...
+valor1 = kwargs.get('arg1')
+valor2 = kwargs.get('arg2')
+valor3 = kwargs.get('arg3')
+...
 ```
 
 La función `info_contacto` definida anteriormente podríamos ejecutarla como sigue:
