@@ -2,18 +2,19 @@
 
 ## ¿Qué con MATLAB?
 
-Para comenzar, este texto no tiene la finalidad de "despotricar" contra nadie, así que vamos a ser *justos* con los 
-*pros* y *contras* de cada lenguaje. MATLAB es un lenguaje de programación de alto nivel, interpretado, multiparadigma*, 
-multiplataforma, de tipado dinámico, entre otras características, que le han convertido con el paso de los años en un 
-estándar para aplicaciones de ingeniería y del ámbito científico, y más aún en el aspecto académico.
+Para comenzar, este texto no tiene la finalidad de "despotricar" contra nadie, así que vamos 
+a ser *justos* con los *pros* y *contras* de cada lenguaje. MATLAB es un lenguaje de programación 
+de alto nivel, interpretado,multiparadigma*, multiplataforma, de tipado dinámico, entre otras 
+características, que le han convertido con el paso de los años en un estándar para aplicaciones 
+de ingeniería y del ámbito científico, y más aún en el aspecto académico.
 
-Pero ha existido desde siempre cierta disyuntiva en lo que respecta a los costos de las licencias, que generalmente 
-suelen ser altos. Guardando las distancias, MathWorks es algo así como un Microsoft en lo que respecta a la forma 
-en que se manejan. Y claro, no sólo eso, sino también cuestiones relacionadas con la distribución de aplicaciones para
-usuarios finales, que a más de uno le ha representado complicaciones. Además suele ser poco recomendable para el 
-desarrollo de grandes proyectos. En cuanto a la rapidez de ejecución, MATLAB dada su condición de lenguaje interpretado
-suele ser considerado como "un poco lento", pero no obstante, para la mayoría de situaciones puede arreglarse mediante
-la capacidad de agregar librerías externas escritas en lenguajes compilados como C y Fortran.
+Pero ha existido desde siempre cierta disyuntiva en lo que respecta a los costos de las licencias, 
+que generalmente suelen ser altos. Y claro, no sólo eso, sino también cuestiones relacionadas con la 
+distribución de aplicaciones para usuarios finales, que a más de uno le ha representado complicaciones. 
+Además suele ser poco recomendable para el desarrollo de grandes proyectos. En cuanto a la rapidez de 
+ejecución, MATLAB dada su condición de lenguaje interpretado suele ser considerado como "un poco lento", 
+pero no obstante, para muchas situaciones puede arreglarse mediante la capacidad de agregar librerías 
+externas escritas en lenguajes compilados como C y Fortran.
 
 
 ## ¿Por qué Python?
@@ -23,8 +24,7 @@ noventa. Es un lenguaje interpretado, de tipado dinámico, multiplataforma, mult
 distribuido gratuitamente, siendo además de código abierto, lo cual ha permitido que detrás del proyecto exista una
 cantidad enorme de usuarios que contribuyen con el mismo.
 
-La diferencia y ventaja más marcada de Python respecto a MATLAB es su condición de lenguaje de propósito general, lo 
-que permite una flexibilidad considerable en el desarrollo de proyectos amplios.
+La diferencia y ventaja más marcada de Python respecto a MATLAB es su condición de lenguaje de propósito general, lo que permite una flexibilidad considerable en el desarrollo de proyectos amplios.
 
 Python se distribuye con una librería estándar, que por sí misma no proporciona las herramientas para el desarrollo de 
 aplicaciones en el ámbito cientifico / ingeniería. Por lo cual es necesario instalar de forma independiente dichas 
