@@ -2,7 +2,7 @@
 
 ## Sentencia if
 
-En MATLAB la sentencia if múltiple tiene la siguiente estructura:
+En MATLAB la sentencia `if` múltiple tiene la siguiente estructura:
 
 ```python
 if cond1
@@ -19,7 +19,7 @@ end
 ``` 
 
 Algo similar ocurre con Python, con la diferencia que se deben colocar dos puntos después de cada instrucción,
-que la identación obviamente es obligatoria, el `elseif` se "acorta" a `elif` además que en Python no se 
+que la identación obviamente es obligatoria, el `elseif` se *acorta* a `elif`, además que en Python no se 
 coloca la instrucción `end` para indicar el final del bloque:
 
 ```python
