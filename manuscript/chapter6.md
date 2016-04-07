@@ -26,35 +26,24 @@ conforman el vector:
 <type 'numpy.ndarray'>
 ```
 
-Podría utilizarse también la función `range``, por ejemplo:
+Para crear un vector equiespaciado puede utilizarse la función `range`:
 
 ```
->>> v = np.array(range(100))
->>> len(v)
-100
+>>> v=np.array((range(10)))
+>>> v
+array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
-O una lista por comprensión:
+Incluso puede definir un vector utilizando listas por comprensión.
 
 ```python
->>> v=[x*0.1 for x in range(11)]
->>> for elemento in v:
-	    print elemento
-
-	
-0.0
-0.1
-0.2
-0.3
-0.4
-0.5
-0.6
-0.7
-0.8
-0.9
-1.0
+>>> lista=[k**2 for k in range(10)]
+>>> v=np.array(lista)
+>>> print v
+[ 0  1  4  9 16 25 36 49 64 81]
 ```
 
+En resumen, para crear un vector se debe pasar una lista como argumento a la función `np.array`.
 
 ### Algunos vectores predefinidos
 
@@ -133,7 +122,11 @@ Por ejemplo:
 Suponga que requiere crear la matriz siguiente:
 
 {$$}
-A= \begin{bmatrix} 1 & 5 & 2 \\ -3 & 1 & 7  \\ 0 & 4 & 8 \end{bmatrix}
+A= \begin{pmatrix} 
+  1 & 5 & 2 \\ 
+  -3 & 1 & 7  \\ 
+  0 & 4 & 8 
+\end{pmatrix}
 {/$$}
 
 Utilizando MATLAB:
@@ -142,20 +135,19 @@ Utilizando MATLAB:
 >> A = [1,5,2;-3,1,7;0,4,8];
 ```
 
-Para Python usaremos la función `matrix`, que deberá recibir como argumento una lista de listas, donde cada sub-lista
-es una fila de la matriz.
-
+Para Python usaremos la función `np.array`, que deberá recibir como argumento una lista de listas, 
+donde cada sub-lista es una fila de la matriz.
 
 ```python
-	>>> A=np.matrix([[1,5,2],[-3,1,7],[0,4,8]])
-	>>> print A
-	[[ 1  5  2]
-	 [-3  1  7]
-	 [ 0  4  8]]
+>>> A=np.array([[1,5,2],[-3,1,7],[0,4,8]])
+>>> A
+array([[ 1,  5,  2],
+       [-3,  1,  7],
+       [ 0,  4,  8]])
 ```
 
-Además de la forma anterior, es posible definir matrices "especiales" utilizando funciones predefinidas del módulo NumPy, 
-por ejemplo una matriz aleatoria:
+Además de la forma anterior, es posible definir matrices "especiales" utilizando funciones predefinidas 
+del módulo NumPy, por ejemplo una matriz aleatoria:
 
 ```python
 	>>> np.random.random((3,3))
@@ -189,6 +181,27 @@ En todos los casos anteriores habrá notado que el argumento de entrada es una t
 el número de filas y columnas que tendrá la matriz. Adicionalmente podría especificar el tipo de dato mediante el 
 *keyword argument* dtype.
 
+Note que en NumPy las matrices de ceros y unos se crean de manera similar que en MATLAB, con la diferencia que 
+el número de filas y columnas se especifica mediante una tupla y en MATLAB con dos argumentos separados. 
+
+Otra diferencia notoria es que por ejemplo en el caso de MATLAB si quiere definir una matriz cuadrada de ceros 
+entonces sólo debe indicar un argumento:
+
+```matlab
+>> MZ = zeros(5);
+```
+
+En Python, no obstante, se deben indicar tanto filas y columnas en la tupla que indica la forma:
+
+```python
+>>> MZ=np.zeros((5,5))
+>>> print MZ
+[[ 0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.]]
+```
 
 ## Operaciones básicas con matrices
 
