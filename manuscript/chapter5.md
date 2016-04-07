@@ -24,12 +24,10 @@ En este punto tenemos una diferencia fundamental respecto a los archivos MATLAB/
 
 ## Módulos y paquetes
 
-D> Esta sección es aplicable/comparable para cuando en MATLAB se desarrolla utilizando el paradigma de 
-D> la programación orientada a objetos y se hace necesario el uso de paquetes de clases.
-
-En la programación MATLAB el concepto de módulo quizá no está tan extendido, pero sí el de paquete, 
-un paquete de clases es un directorio ordinario que contiene un conjunto de definiciones de clases, 
-teniendo la particularidad que el nombre del mismo debe comenzar con un signo de suma (`+`).
+En la programación MATLAB el concepto de módulo no es común, pero sí el de paquete, 
+un paquete es un directorio ordinario que contiene un conjunto de definiciones de clases, 
+funciones o scripts, teniendo la particularidad que el nombre del mismo debe comenzar 
+con un signo de suma (`+`).
 
 En Python, un módulo es un fichero con extensión `.py` que contienen definiciones de clases, 
 funciones y/o instrucciones ejecutables. Y un paquete es un directorio que agrupa un conjunto 
@@ -38,24 +36,39 @@ tal.
 
 ### Creando paquetes
 
-En MATLAB un paquete de clases se crea utilizando un directorio cuyo nombre debe comenzar con un signo 
+En MATLAB un paquete  se crea utilizando un directorio cuyo nombre debe comenzar con un signo 
 de suma (`+`). Por ejemplos, supongamos que tenemos un paquete `graficas` que debe contener las clases 
 `Lineas`, `Barras` y `Puntos`, entonces se debe crear una estructura como la siguiente:
 
+{linenos=off}
 	└── +graficas
 	    ├── Lineas.m
 	    ├── Barras.m
 	    └── Puntos.m
 
+Para hacer esto en Python se puede proceder de manera muy similar:
 
+{linenos=off}
+	└── graficas 
+	    ├── __init__.py 
+	    ├── Lineas.py 
+	    ├── Barras.py 
+	    └── Puntos.py
 
+Ya mencionabamos anteriormente las diferencias de sintaxis: en Python se debe colocar un fichero `__init__.py` 
+dentro del paquete.
+
+T> La filosofía de Python dice que *simple es mejor que complejo*, así que, dada la flexibilidad de Python, 
+T> podríamos agrupar las clases `Lineas`, `Barras` y `Puntos` dentro de un mismo fichero `.py`, evitando crear 
+T> un paquete, reduciendo el número de ficheros necesarios y consecuentemente una mejor organización y 
+T> estructura del proyecto.
 
 ### Importar y utilizar módulos
 
 Normalmente cuando se inicia el entorno de MATLAB, se tienen disponibles todas las funciones incluidas en los 
 Toolboxs que se tengan instalados, sin necesidad de importar librerías o paquetes, esto puede considerarse una 
-ventaja, pero también una enorme desventaja, algo paradójico. Vamos, que si necesita utilizar algunas
-funciones matemáticas elementales, no hace falta más que escribirlas, por ejemplo:
+ventaja (en principio, talvez), pero también una enorme desventaja, algo paradójico. Vamos, que si necesita 
+utilizar algunas funciones matemáticas elementales, no hace falta más que escribirlas, por ejemplo:
 
 ```matlab
 % Algunas funciones matemáticas elementales en MATLAB
@@ -67,7 +80,7 @@ funciones matemáticas elementales, no hace falta más que escribirlas, por ejem
 
 No obstante, en Python, cuando se inicia el interpréte no se tienen disponibles todas estas funciones, sino 
 sólo algunas que son consideradas como *built-in functions*. Para utilizar cualquier otro tipo de funciones 
-hace falta importar el módulo en el cual se encuentren estas. Por ejemplo para ejecutar el ejemplo anterior 
+hace falta importar el módulo en el cual se encuentren estas. Por ejemplo, para ejecutar el ejemplo anterior 
 en Python habría que importar el módulo **math** tal cómo se indica a continuación:
 
 ```python
@@ -95,11 +108,10 @@ NameError: name 'exp' is not defined
 
 Existen, generalmente, tres formas de importar un módulo, a saber:
 
-```
-1) import modulo
-2) import modulo as md
-3) from modulo import algo
-```
+
+1) `import modulo`
+2) `import modulo as md`
+3) `from modulo import algo`
 
 **Primer forma**
 
