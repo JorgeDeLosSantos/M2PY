@@ -1,10 +1,10 @@
-# Los primeros pasos
+﻿# Los primeros pasos
 
 ## ¿Qué con MATLAB?
 
-Para comenzar, este texto no tiene la finalidad de "despotricar" contra nadie, así que vamos 
-a ser *justos* con los *pros* y *contras* de cada lenguaje. MATLAB es un lenguaje de programación 
-de alto nivel, interpretado,multiparadigma*, multiplataforma, de tipado dinámico, entre otras 
+Para comenzar, este texto no tiene la finalidad de *arremeter* contra nadie, así que vamos 
+a ser un poco *sensibles* con los *pros* y *contras* de cada lenguaje. MATLAB es un lenguaje de programación 
+de alto nivel, interpretado, multiparadigma*, multiplataforma, de tipado dinámico, entre otras 
 características, que le han convertido con el paso de los años en un estándar para aplicaciones 
 de ingeniería y del ámbito científico, y más aún en el aspecto académico.
 
@@ -22,7 +22,7 @@ externas escritas en lenguajes compilados como C y Fortran.
 Python es un lenguaje desarrollado a finales de los ochenta y cuyas primeras versiones aparecieron al principio de los
 noventa. Es un lenguaje interpretado, de tipado dinámico, multiplataforma, multiparadigma, con una sintaxis sencilla y
 distribuido gratuitamente, siendo además de código abierto, lo cual ha permitido que detrás del proyecto exista una
-cantidad enorme de usuarios que contribuyen con el mismo.
+comunidad enorme y muy sólida de usuarios que contribuyen con el mismo.
 
 La diferencia y ventaja más marcada de Python respecto a MATLAB es su condición de lenguaje de propósito general, lo que permite una flexibilidad considerable en el desarrollo de proyectos amplios.
 
@@ -67,8 +67,8 @@ el ámbito científico. Utiliza NumPy como base.
 Página del proyecto: [http://matplotlib.org](http://matplotlib.org)
 
 Matplotlib es una librería que proporciona herramientas de visualización gráfica en 2D de gran calidad, y una 
-capacidad aceptable para 3D. Es muy notorio también que en cierta medida está inspirada en MATLAB, teniendo
-una sintaxis muy similar, lo cual ayudará mucho en esta *transición*.
+capacidad, hasta cierto punto aceptable, para 3D. Es muy notorio también que en cierta medida está inspirada en MATLAB, 
+teniendo una sintaxis muy similar, lo cual ayudará mucho en esta *transición*.
 
 
 Para instalar las librerías puede acceder a las páginas de cada proyecto y proceder conforme se especifica

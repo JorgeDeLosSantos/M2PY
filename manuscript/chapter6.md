@@ -1,4 +1,4 @@
-# Vectores y matrices
+﻿# Vectores y matrices
 
 En este capítulo abordaremos el uso del módulo NumPy para el manejo de arreglos numéricos (matrices y vectores), de 
 modo que aún cuando no se especifique de forma explícita, se asumirá que se ha importado la librería NumPy utilizando el 

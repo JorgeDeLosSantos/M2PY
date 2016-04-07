@@ -1,4 +1,4 @@
-# Los tipos de datos
+﻿# Los tipos de datos
 
 ## Tipos numéricos
 
@@ -63,20 +63,19 @@ retorna un objeto de tipo `complex`, y desde luego es considerado un *built-in t
 La siguiente tabla resume las diferencias en ambos lenguajes:
 
 
-MATLAB   | Python
----|---
-Constantes
-`true`   | `True`
-`false` | `False`
-Funciones
-logical(n) | bool(n)
+|MATLAB   | Python|
+| Constantes | |
+|`true`   | `True`|
+|`false` | `False`|
+|Funciones| |
+|logical(n) | bool(n)|
 
 
 ## Cadenas de caracteres
 
 En Python las cadenas de caracteres pueden crearse utilizando las comillas dobles o simples, por ejemplo:
 
-```matlab
+```python
 >>> cad1='Esto es una cadena de caracteres'
 >>> cad2="Y esto también"
 >>> type(cad1)

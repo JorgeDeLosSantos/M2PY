@@ -1,4 +1,4 @@
-# Gráficas
+﻿# Gráficas
 
 Las gráficas en MATLAB son parte de su enorme popularidad, puesto que dispone de un amplio catálogo de
 posibilidades, y una flexibilidad importante.
