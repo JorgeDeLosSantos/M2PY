@@ -135,3 +135,42 @@ clases con el mismo nombre, provenientes de módulos diferentes.
 
 **Segunda forma**
 
+Similar a la primera, con la única diferencia que se especifica un *alias* para el nombre del módulo, lo cual lo hace 
+muy conveniente si se importan nombres de módulos muy largos.
+
+Siguiendo con el ejemplo del módulo `math`:
+
+```python
+>>> import math as m
+>>> m.exp(1)
+2.718281828459045
+>>> m.cos(0)
+1.0
+```
+
+Lo anterior importa el módulo `math` con el alias `m`, y entonces para referir al módulo debemos utilizar 
+el alias que hemos indicado.
+
+**Tercera forma**
+
+Esta forma es conveniente cuando solamente se necesitarán unas pocas funciones, clases o constantes de un 
+determinado módulo. 
+
+Por ejemplo, si del módulo `math` sólo vamos a utilizar la constante {$$}\pi{/$$} y la función coseno:
+
+```python
+>>> from math import pi,cos
+>>> cos(pi)
+-1.0
+```
+
+Aunque esto no siempre es así, muchos acostumbran a importar todo el contenido de un módulo post-poniendo 
+un asterisco (`*`).
+
+```python
+>>> from math import *
+```
+
+Pero esto normalmente no es recomendable, puede conducir a errores cuando se *mezclan* módulos 
+que contienen clases, funciones o constantes de nombres iguales o al menos similares.
+
