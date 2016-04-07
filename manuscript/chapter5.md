@@ -22,12 +22,35 @@ En este punto tenemos una diferencia fundamental respecto a los archivos MATLAB/
   usuario y no limitada (caso MATLAB) por el propio lenguaje.
 
 
-## ¿Qué es un módulo?
+## Módulos y paquetes
 
-En términos informales un módulo es un fichero con extensión `.py` o bien un conjunto de ficheros, que contienen 
-definiciones de clases, funciones y constantes.
+D> Esta sección es aplicable/comparable para cuando en MATLAB se desarrolla utilizando el paradigma de 
+D> la programación orientada a objetos y se hace necesario el uso de paquetes de clases.
 
-## Importar y utilizar módulos
+En la programación MATLAB el concepto de módulo quizá no está tan extendido, pero sí el de paquete, 
+un paquete de clases es un directorio ordinario que contiene un conjunto de definiciones de clases, 
+teniendo la particularidad que el nombre del mismo debe comenzar con un signo de suma (`+`).
+
+En Python, un módulo es un fichero con extensión `.py` que contienen definiciones de clases, 
+funciones y/o instrucciones ejecutables. Y un paquete es un directorio que agrupa un conjunto 
+de módulos y que además debe contener un fichero `__init__.py` para que Python lo reconozca como 
+tal.
+
+### Creando paquetes
+
+En MATLAB un paquete de clases se crea utilizando un directorio cuyo nombre debe comenzar con un signo 
+de suma (`+`). Por ejemplos, supongamos que tenemos un paquete `graficas` que debe contener las clases 
+`Lineas`, `Barras` y `Puntos`, entonces se debe crear una estructura como la siguiente:
+
+	└── +graficas
+	    ├── Lineas.m
+	    ├── Barras.m
+	    └── Puntos.m
+
+
+
+
+### Importar y utilizar módulos
 
 Normalmente cuando se inicia el entorno de MATLAB, se tienen disponibles todas las funciones incluidas en los 
 Toolboxs que se tengan instalados, sin necesidad de importar librerías o paquetes, esto puede considerarse una 
