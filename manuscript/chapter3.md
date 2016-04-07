@@ -1,6 +1,6 @@
 ﻿# Estructuras de control
 
-## Sentencia if
+## Sentencia if-else if-else
 
 En MATLAB la sentencia `if` múltiple tiene la siguiente estructura:
 

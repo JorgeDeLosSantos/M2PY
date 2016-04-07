@@ -46,11 +46,11 @@ contrario.
 En MATLAB:
 
 ```matlab
-function r =  es_par(n)
+function r = es_par(n)
 if ~rem(n,2)
-	r = true;
+    r = true;
 else
-	r = false;
+    r = false;
 end
 end
 ```
@@ -74,8 +74,8 @@ val = es_par(7)
 
 Donde val se espera sea un valor lógico falso para este caso.
 
-No obstante si los valores de retorno son múltiples, entonces existe una variación en la forma de llamar a la función, 
-a saber:
+No obstante si los valores de retorno son múltiples, entonces existe una *mínima variación* en la 
+forma de llamar a la función, a saber:
 
 ```
 >> [a,b,c] = fun(x,y,z) % Para MATLAB
@@ -158,7 +158,7 @@ def maximo(*args):
 
 Una diferencia notoria en los ejemplos anteriores es la manera de acceder a los elementos de un arreglo, mientras en MATLAB
 se utilizan paréntesis y llaves, en Python se utiliza el corchete. Además, en MATLAB los índices de un arreglo comienzan 
-en uno, no así en Python que sigue la convención de la mayoría de los lenguajes y comienza en cero.
+en uno, no así en Python que sigue la convención de la mayoría de los lenguajes (*zero based*) y comienza en cero.
 
 ## Un plus en Python: keyword arguments
 

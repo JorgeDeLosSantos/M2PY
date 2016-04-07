@@ -1,11 +1,31 @@
-﻿# Los módulos en Python
+﻿# Scripts, ficheros y esas cosas.
+
+En este capítulo veremos cómo se organizan los ficheros en Python y las similitudes/diferencias 
+respecto a MATLAB.
+
+## De los ficheros y scripts
+
+Vamos a comenzar con el tipo de archivo más simple tanto en MATLAB como Python. Un script es 
+un archivo de texto plano, con extensión `.py` (Python) o `.m` (MATLAB) que contiene una serie 
+de instrucciones o comandos que deberán ejecutarse de manera secuencial.
+
+En este punto tenemos una diferencia fundamental respecto a los archivos MATLAB/Python: 
+
+* En MATLAB en un fichero sólo podemos definir una serie de instrucciones, una función y subfunciones o
+  una definición de clase; una de las opciones anteriores a la vez. Es decir, que si necesitas 
+  programar un script que además utilice una función definida por el usuario, se tendrán que utilizar dos 
+  ficheros: uno para el script y otro para la función.
+
+* En Python la cuestión de los ficheros es más *razonable*. En un mismo archivo se pueden definir funciones, 
+  clases, y lo que se nos ocurra. Eso es una gran ventaja cuando los proyectos van más allá de unos centenares 
+  de líneas, permite establecer una estructura de ficheros acorde a la funcionalidad establecida por el 
+  usuario y no limitada (caso MATLAB) por el propio lenguaje.
+
 
 ## ¿Qué es un módulo?
 
-En términos informales un módulo es un fichero con extensión .py o bien un conjunto de ficheros, que contienen 
+En términos informales un módulo es un fichero con extensión `.py` o bien un conjunto de ficheros, que contienen 
 definiciones de clases, funciones y constantes.
-
-Los módulos constituyen la base de la programación en Python (...)
 
 ## Importar y utilizar módulos
 
