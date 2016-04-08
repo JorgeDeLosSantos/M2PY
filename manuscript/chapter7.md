@@ -72,7 +72,8 @@ plt.title(u'Mi gráfica')
 plt.show()
 ```
 
-![IMG01](images/ch7/img_01.PNG)
+{width=70%}
+![](images/ch7/img_01.PNG)
 
 
 ### Modificando el color, ancho y estilo de linea
@@ -102,7 +103,8 @@ plt.title(u'Mi gráfica')
 plt.show()
 ```
 
-![IMG02](images/ch7/img_02.PNG)
+{width=70%}
+![](images/ch7/img_02.PNG)
 
 En MATLAB se utilizan los argumentos *pareados* para modificar las características de un objeto gráfico, por 
 ejemplo para modificar el ancho de línea de una gráfica:
