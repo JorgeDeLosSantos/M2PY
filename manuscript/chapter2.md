@@ -86,4 +86,72 @@ En Python las cadenas de caracteres pueden crearse utilizando las comillas doble
 
 En MATLAB, como sabemos, la única forma es utilizando las comillas simples.
 
-## Estructuras de datos
+## Arrays
+
+En MATLAB, fundamentalmente, todo es un array, incluso los escalares son arreglos de 1x1. Pero, siendo 
+un poco más flexibles consideraremos que existen tres tipos de arrays o estructuras de datos que sirven 
+para almacenar datos de manera agrupada:
+
+* Matrices
+* Arreglos de celdas (cell arrays)
+* Estructuras (struct)
+
+Las **matrices** son arreglos de valores numéricos dispuestos en filas y columnas. Las matrices de MATLAB 
+pueden emularse utilizando una lista de listas, pero obviamente con esto no se podría operar 
+de manera satisfactoria. Para ello existe la librería NumPy, que provee algunas 
+clases/tipos de datos orientados al manejo de matrices y/o arreglos numéricos. Puede revisar el 
+capítulo referente a [Vectores y matrices]({#vectores-y-matrices}) para obtener una referencia 
+más completa al respecto.
+
+Los **arreglos de celdas** permiten almacenar datos *heterogéneos*, es decir, podemos almacenar tanto 
+valores numéricos como strings, e inclusive otros arreglos dentro del mismo cell array. 
+En Python, las listas tienen un comportamiento similar:
+
+```python
+>>> c=["Hola",1,0.5,[1,2,3],(0,1),{"a":1,"b":2}]
+>>> c
+['Hola', 1, 0.5, [1, 2, 3], (0, 1), {'a': 1, 'b': 2}]
+```
+
+En la lista anterior podemos observar que almacenamos tanto cadenas de caracteres, enteros, 
+reales, listas, tuplas y diccionarios, es decir, diversos tipos de datos, como lo haríamos 
+en un cell array de MATLAB.
+
+Las **estructuras** de MATLAB se pueden reemplazar/emular utilizando diccionarios, el concepto 
+es muy similar, ambos utilizan el modelo clave-valor para almacenar datos.
+
+Por ejemplo para guardar la información de nombre, edad y nacionalidad  acerca de una persona 
+podríamos hacer lo siguiente:
+
+En MATLAB (usando estructuras):
+
+```MATLAB
+>> persona.Nombre = 'Jorge';
+>> persona.Edad = 20;
+>> persona.Nacionalidad = 'Mexicana';
+```
+
+En Python (utilizando diccionarios):
+
+```python
+>>> persona=dict()
+>>> persona['Nombre']='Jorge'
+>>> persona['Edad']=20
+>>> persona['Nacionalidad']='Mexicana'
+```
+
+Bastante similar ¿verdad?. Bueno, en Python hay otras formas de definir un diccionario que quizá 
+en determinados casos resulten más cómodas:
+
+Utilizando notación de llaves:
+
+```python
+>>> persona={'Nombre':'Jorge','Edad':20,'Nacionalidad':'Mexicana'}
+```
+
+Utilizando directamente el constructor y pasando las claves-valor como *keyword arguments*:
+
+
+```python
+>>> persona=dict(Nombre='Jorge',Edad=20,Nacionalidad='Mexicana')
+```

@@ -1,8 +1,9 @@
-﻿# Vectores y matrices
+﻿# Vectores y matrices {#vectores-y-matrices}
 
-En este capítulo abordaremos el uso del módulo NumPy para el manejo de arreglos numéricos (matrices y vectores), de 
-modo que aún cuando no se especifique de forma explícita, se asumirá que se ha importado la librería NumPy utilizando el 
-alias (pseudónimo) `np` , tal como se indica enseguida:
+En este capítulo abordaremos el uso del módulo NumPy para el manejo de arreglos numéricos 
+(matrices y vectores), de modo que aún cuando no se especifique de forma explícita, 
+se asumirá que se ha importado la librería NumPy utilizando el alias `np` , 
+tal como se indica enseguida:
 
 ```python	
 >>> import numpy as np
@@ -11,7 +12,7 @@ alias (pseudónimo) `np` , tal como se indica enseguida:
 
 ## Definiendo un vector
 
-Tomaremos el vector **v=<3,-1,8>** como ejemplo, así en MATLAB para crear dicho vector sería:
+Tomaremos el vector **v=<3,-1,8>** como ejemplo; en MATLAB para crear dicho vector sería:
 
 ```matlab
 >> v = [3,-1,8];
@@ -67,7 +68,7 @@ la cantidad de puntos es modificable, siendo 50 por defecto, por ejemplo, para g
    9.18367347   9.3877551    9.59183673   9.79591837  10.        ]
 ```
 
-O si requiere una cantidad de puntos menores:
+O si requiere una cantidad más reducida de puntos:
 
 ```python
 >>> v = np.linspace(1,5,5)
@@ -119,7 +120,7 @@ Por ejemplo:
 
 ## Definiendo una matriz
 
-Suponga que requiere crear la matriz siguiente:
+Suponga que requiere crear la matriz:
 
 {$$}
 A= \begin{pmatrix} 
@@ -210,8 +211,8 @@ En Python, no obstante, se deben indicar tanto filas y columnas en la tupla que 
 Definimos dos matrices A y B de 3x3:
 
 ```python
->>> A=np.matrix([[1,-1,2],[8,3,0],[-5,7,4]])
->>> B=np.matrix([[3,2,0],[11,-4,1],[6,1,2]])
+>>> A=np.array([[1,-1,2],[8,3,0],[-5,7,4]])
+>>> B=np.array([[3,2,0],[11,-4,1],[6,1,2]])
 >>> print A
 [[ 1 -1  2]
  [ 8  3  0]
@@ -228,16 +229,16 @@ lo haría con valores escalares (al igual que en MATLAB):
 
 ```python
 >>> A+B
-matrix([[ 4,  1,  2],
-        [19, -1,  1],
-        [ 1,  8,  6]])
+array([[ 4,  1,  2],
+       [19, -1,  1],
+       [ 1,  8,  6]])
 >>> A-B
-matrix([[ -2,  -3,   2],
-        [ -3,   7,  -1],
-        [-11,   6,   2]])
+array([[ -2,  -3,   2],
+       [ -3,   7,  -1],
+       [-11,   6,   2]])
 >>> B-A
-matrix([[ 2,  3, -2],
-        [ 3, -7,  1],
-        [11, -6, -2]])
+array([[ 2,  3, -2],
+       [ 3, -7,  1],
+       [11, -6, -2]])
 ```
 

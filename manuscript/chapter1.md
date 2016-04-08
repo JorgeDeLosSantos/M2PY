@@ -34,15 +34,18 @@ librerías, y de las cuales se hablará en la siguiente sección.
 
 ## ¿Qué necesitamos?
 
-Desde luego tener Python instalado, para ello puede dirigirse a la página de [descargas](https://www.python.org/downloads/)
-y seguir los procedimientos que ahí se indican de acuerdo al sistema operativo que disponga.
+Desde luego tener Python instalado, para ello puede dirigirse a la página de 
+[descargas](https://www.python.org/downloads/) y seguir los procedimientos que ahí se 
+indican de acuerdo al sistema operativo que disponga.
 
-El tema de las versiones 2.x y 3.x de Python es un punto de "discusión" muy común, lo cierto es que sería más recomendable 
-utilizar una versión 3.x, pero en este texto se usará la versión 2.7. Pero claro, la elección es solamente del lector. 
-Remarcando el hecho que deberá utilizar las librerías compatibles con la versión de Python instalada.
+El tema de las versiones 2.x y 3.x de Python es un punto de "discusión" muy común, lo cierto es que 
+sería más recomendable utilizar una versión 3.x, pero en este texto se usará la versión 2.7. 
+Pero claro, la elección es solamente del lector. Remarcando el hecho que deberá utilizar las librerías 
+compatibles con la versión de Python instalada.
 
-Ahora, existen múltiples librerías para Python destinadas al computo científico, especializadas en menor o mayor grado, 
-pero para comenzar la transición MATLAB-Python existen, a criterio del autor, tres librerías esenciales, a saber:
+Ahora, existen múltiples librerías para Python destinadas al computo científico, especializadas en menor 
+o mayor grado, pero para comenzar la transición MATLAB-Python existen, a criterio del autor, tres 
+librerías esenciales, a saber:
 
 * NumPy
 * SciPy
@@ -69,10 +72,14 @@ el ámbito científico. Utiliza NumPy como base.
 Página del proyecto: [http://matplotlib.org](http://matplotlib.org)
 
 Matplotlib es una librería que proporciona herramientas de visualización gráfica en 2D de gran calidad, y una 
-capacidad, hasta cierto punto aceptable, para 3D. Es muy notorio también que en cierta medida está inspirada en MATLAB, 
-teniendo una sintaxis muy similar, lo cual ayudará mucho en esta *transición*.
-
+capacidad, hasta cierto punto aceptable, para 3D. Es muy notorio también que en cierta medida está inspirada 
+en MATLAB, teniendo una sintaxis muy similar, lo cual ayudará mucho en esta *transición*.
 
 Para instalar las librerías puede acceder a las páginas de cada proyecto y proceder conforme se especifica
 en la sección de descarga correspondiente. O bien utilizar herramientas de instalación para módulos de Python
 como `pip` o `easy_install`.
+
+I> Si utiliza Windows es común que la instalación de librerías como NumPy presenten ciertas complicaciones, 
+I> por ello siempre es recomendable descargar los binarios que han sido compilados para tal propósito. 
+I> Los binarios de muchas librerías de Python pueden encontrarse en la 
+I> [página](http://www.lfd.uci.edu/~gohlke/pythonlibs/) de Christoph Gohlke, que sin duda hace un trabajo excepcional.
