@@ -1,12 +1,16 @@
 ﻿# Scripts, ficheros y esas cosas.
 
-En este capítulo veremos cómo se organizan los ficheros en Python y las similitudes/diferencias 
-respecto a MATLAB.
+Los ficheros juegan un papel muy importante dentro de la programación tanto en MATLAB y Python, 
+como en cualquier otro lenguaje, ya que sin estos sería un poco inútil pasarnos escribiendo en la 
+consola interactiva y volver a reescribir en cada sesión. Pero además, no basta con saber crear 
+un fichero, guardarlo y después utilizarlo, ¡no!, también se hace necesario saber organizarlos 
+en una estructura de ficheros adecuada o cuando menos razonable. En este capítulo veremos cómo se 
+organizan los ficheros en Python y las similitudes/diferencias respecto a MATLAB.
 
 ## De los ficheros y scripts
 
 Vamos a comenzar con el tipo de archivo más simple tanto en MATLAB como Python. Un script es 
-un archivo de texto plano, con extensión `.py` (Python) o `.m` (MATLAB) que contiene una serie 
+un fichero de texto plano, con extensión `.py` (Python) o `.m` (MATLAB) que contiene una serie 
 de instrucciones o comandos que deberán ejecutarse de manera secuencial.
 
 En este punto tenemos una diferencia fundamental respecto a los archivos MATLAB/Python: 
@@ -20,6 +24,28 @@ En este punto tenemos una diferencia fundamental respecto a los archivos MATLAB/
   clases, y lo que se nos ocurra. Eso es una gran ventaja cuando los proyectos van más allá de unos centenares 
   de líneas, permite establecer una estructura de ficheros acorde a la funcionalidad establecida por el 
   usuario y no limitada (caso MATLAB) por el propio lenguaje.
+
+## Ejecutando scripts
+
+En MATLAB los scripts se ejecutan tecleando el nombre en el *Command Window*, por ejemplo:
+
+```matlab
+>> script_01
+```
+
+Lo anterior ejecuta el script `script_01.m` siempre y cuando este se encuentre en el *Current Folder* 
+o bien en el path de MATLAB.
+
+En Python la cuestión es parecida, deberá abrir una consola/terminal y teclear:
+
+```python
+> python script_01.py
+```
+
+Claro, para esto deberá estar ubicado en el directorio que contiene al script `script_01.py`.
+
+Si utiliza Microsoft Windows, incluso no es necesario abrir una consola, sino que puede *correr* directamente 
+el script como cualquier otro ejecutable de Windows.
 
 
 ## Módulos y paquetes
