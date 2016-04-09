@@ -9,5 +9,6 @@ medios de contacto.
 * [E-mail](<delossantosmfq@gmail.com>)
 * [Twitter](https://twitter.com/pjdlsl)
 
-O bien a través de la plataforma de LeanPub en el siguiente [link](https://leanpub.com/dematlabapython/email_author/new).
+O bien a través de la plataforma de LeanPub en el siguiente 
+[link](https://leanpub.com/dematlabapython/email_author/new).
 
