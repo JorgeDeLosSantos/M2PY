@@ -1,5 +1,12 @@
 ﻿# Los tipos de datos
 
+En este breve capítulo veremos los tipos de datos que tenemos disponibles en Python para sustituir a 
+sus equivalentes de MATLAB. La descripción de los tipos de datos es muy *superficial*, en todo caso 
+sólo para efectos comparativos con los tipos de datos de MATLAB, para una referencia más completa 
+sobre los tipos de datos en Python, puede consultar la documentación oficial[^types]
+
+[^types]: <https://docs.python.org/2/library/stdtypes.html>
+
 ## Tipos numéricos
 
 ### Enteros
