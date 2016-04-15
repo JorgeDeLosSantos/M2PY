@@ -1,4 +1,4 @@
-﻿# Los tipos de datos
+﻿# Los tipos de datos y operadores
 
 En este breve capítulo veremos los tipos de datos que tenemos disponibles en Python para sustituir a 
 sus equivalentes de MATLAB. La descripción de los tipos de datos es muy *superficial*, en todo caso 
@@ -162,3 +162,13 @@ Utilizando directamente el constructor y pasando las claves-valor como *keyword 
 ```python
 >>> persona=dict(Nombre='Jorge',Edad=20,Nacionalidad='Mexicana')
 ```
+
+## Operadores
+
+### Operadores aritméticos
+
+
+### Operadores relacionales
+
+
+### Operadores lógicos
