@@ -27,16 +27,45 @@ En Python una clase se define utilizando la palabra reservada `class` seguido po
 
 ```python
 class MiClase:
-	# ...
-	# Cuerpo de la clase
-	# ...
+    # ...
+    # Cuerpo de la clase
+    # ...
 ```
 
 Desde luego en Python, nuevamente, la indentación juega un papel muy importante.
 
 ### El constructor de la clase
 
+En MATLAB el constructor de la clase es una función con el mismo nombre de la clase, ubicada dentro 
+de un bloque de métodos:
 
+```matlab
+classdef MiClase
+	methods
+		function obj = MiClase(args)
+			% Cuerpo del constructor
+		end
+	end
+end
+``` 
+
+En Python, se utiliza el método `__init__` que actúa como un *pseudoconstructor*:
+
+```python
+class MiClase:
+	def __init__(self,args)
+		# Cuerpo del constructor
+``` 
+
+Con las dos estructuras anteriores podemos establecer lo siguiente:
+
+En MATLAB es necesario que el constructor retorne un valor asignado a la variable `obj`, el cual 
+será el objeto mismo. No así en Python, cuyo constructor no necesariamente debe retornar un valor.
+
+Sin embargo habrá notado que en Python, además de los argumentos ordinarios de inicialización que 
+pudiera requerir nuestra clase, se necesita pasar como primer argumento un parámetro (por convención 
+y tómelo como una *obligación* este parámetro se llamará `self`) que hace referencia a la clase misma, 
+y mediante el cual se *pasan* los atributos entre los métodos de la clase.
 
 
 ## Herencia
