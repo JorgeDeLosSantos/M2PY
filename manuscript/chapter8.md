@@ -14,9 +14,9 @@ En MATLAB las clases se definen utilizando la palabra reserva `classdef`:
 
 ```matlab
 classdef MiClase
-	%
-	% Cuerpo de la clase
-	%
+    %
+    % Cuerpo de la clase
+    %
 end
 ```
 
@@ -27,9 +27,9 @@ En Python una clase se define utilizando la palabra reservada `class` seguido po
 
 ```python
 class MiClase:
-	# ...
-	# Cuerpo de la clase
-	# ...
+    # ...
+    # Cuerpo de la clase
+    # ...
 ```
 
 Desde luego en Python, nuevamente, la indentación juega un papel muy importante.
