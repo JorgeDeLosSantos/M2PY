@@ -13,7 +13,6 @@ O bien a través de la plataforma de LeanPub en el siguiente
 [link](https://leanpub.com/dematlabapython/email_author/new).
 
 
-
 # Introducción 
 
 **De MATLAB a Python** ha nacido con la idea de facilitar una herramienta didáctica a las personas hispanohablantes 
@@ -30,4 +29,4 @@ Normalmente en el desarrollo del texto se incluyen fragmentos de código equival
 para hacer énfasis en las diferencias de sintaxis. Y por supuesto, con la idea de que sirva al lector como 
 una referencia rápida; sí, muchas veces es más simple (y recomendable) *tomar* el código, testearlo y entenderlo.
 
-R> *El autor*
+*- El autor*
