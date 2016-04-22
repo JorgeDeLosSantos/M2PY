@@ -3,7 +3,7 @@
 ## Estructuras de control
 
 
-* * *
+![](images/line.png)
 
 ### Sentencia if
 
@@ -20,9 +20,4 @@ if a > 10:
     print("A es mayor que 10")
 ```
 
-* * *
-
-Bla bla
-
-| -------- |
-
+![](images/line.png)
