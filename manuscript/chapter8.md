@@ -20,7 +20,7 @@ classdef MiClase
 end
 ```
 
-I> Extraño que no se utilice la palabra `class` en MATLAB para definir una clase, pero recuerde que 
+I> Es un poco *extraño* que no se utilice la palabra `class` en MATLAB para definir una clase, pero recuerde que 
 I> esta se usa para identificar el tipo de una variable.
 
 En Python una clase se define utilizando la palabra reservada `class` seguido por el nombre de la clase: 
@@ -41,11 +41,11 @@ de un bloque de métodos:
 
 ```matlab
 classdef MiClase
-	methods
-		function obj = MiClase(args)
-			% Cuerpo del constructor
-		end
-	end
+    methods
+        function obj = MiClase(args)
+            % Cuerpo del constructor
+        end
+    end
 end
 ``` 
 
@@ -53,8 +53,8 @@ En Python, se utiliza el método `__init__` que actúa como un *pseudoconstructo
 
 ```python
 class MiClase:
-	def __init__(self,args)
-		# Cuerpo del constructor
+    def __init__(self,args)
+        # Cuerpo del constructor
 ``` 
 
 Con las dos estructuras anteriores podemos establecer lo siguiente:
@@ -64,11 +64,27 @@ será el objeto mismo. No así en Python, cuyo constructor no necesariamente deb
 
 Sin embargo habrá notado que en Python, además de los argumentos ordinarios de inicialización que 
 pudiera requerir nuestra clase, se necesita pasar como primer argumento un parámetro (por convención 
-y tómelo como una *obligación* este parámetro se llamará `self`) que hace referencia a la clase misma, 
+y tómelo como una *obligación*, este parámetro se llamará `self`) que hace referencia a la clase misma, 
 y mediante el cual se *pasan* los atributos entre los métodos de la clase.
 
 
 ## Herencia
 
+En MATLAB para heredar de una clase debe utilizarse el signo < después del nombre de la clase y enseguida 
+indicar el nombre de la superclase:
 
-## Métodos estáticos
+```matlab
+classdef MiClase < SuperClase
+
+% Cuerpo de la clase
+
+end
+```
+
+En Python para heredar de una clase, la superclase se debe colocar entre paréntesis después del nombre de la 
+clase, como si fuera un argumento de función:
+
+```python
+class MiClase(SuperClase):
+    # Cuerpo de la clase
+```
