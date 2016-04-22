@@ -3,7 +3,7 @@
 ## Estructuras de control
 
 
-|------|
+| |
 ### Sentencia if
 
 {linenos=off}
@@ -18,4 +18,4 @@ end
 if a > 10:
     print("A es mayor que 10")
 ```
-|      |
+| |
