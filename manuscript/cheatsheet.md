@@ -7,10 +7,8 @@
 
 
 
-{width=100%}
+{width=70%}
 ![](images/linesep.PNG)
-
-
 
 
 {width=70%}
