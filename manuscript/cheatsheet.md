@@ -1,10 +1,13 @@
 ﻿# Resumiendo...
 
-## Básico
+## Estructuras de control
 
-### Estructuras de control
-
-| ```python                 | ```matlab |
-| if a>0:                   | disp(a+1);
-|     # Hacer algo ...      | ```    |
-| ```                        |        |
+A> ### Bucle for
+A>
+A> for x = 1:10
+A>     disp(x);
+A> end
+A> 
+A> for x in range(1,11):
+A>     print(x);
+A>
