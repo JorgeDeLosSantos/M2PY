@@ -4,7 +4,7 @@
 
 
 {width=100%}
-![](images/line.png)
+![](images/line.PNG)
 
 
 ### Sentencia if
@@ -25,4 +25,4 @@ if a > 10:
 
 
 {width=100%}
-![](images/line.png)
+![](images/line.PNG)
