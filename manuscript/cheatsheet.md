@@ -1,9 +1,11 @@
-﻿# Resumiendo...
+﻿# Resumiendo
 
 ## Estructuras de control
 
 
+{width=100%}
 ![](images/line.png)
+
 
 ### Sentencia if
 
@@ -20,4 +22,7 @@ if a > 10:
     print("A es mayor que 10")
 ```
 
+
+
+{width=100%}
 ![](images/line.png)
