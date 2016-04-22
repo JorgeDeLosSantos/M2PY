@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448"
-   height="3.5433071"
+   width="750"
+   height="5"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
@@ -21,6 +21,17 @@
    inkscape:export-ydpi="90">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient3472">
+      <stop
+         id="stop3482"
+         offset="0"
+         style="stop-color:#b3b3b3;stop-opacity:0.47058824;" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:0;"
+         offset="1"
+         id="stop3476" />
+    </linearGradient>
     <linearGradient
        id="linearGradient3747">
       <stop
@@ -2966,6 +2977,15 @@
        fx="558.80469"
        fy="94.817711"
        r="355.26447" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3472"
+       id="linearGradient3480"
+       x1="385.85794"
+       y1="2102.0967"
+       x2="385.85791"
+       y2="2128.3579"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -2980,7 +3000,7 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     units="mm"
+     units="px"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="-4"
@@ -3010,14 +3030,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-2101.1776)">
+     transform="translate(0,-2099.7209)">
     <rect
-       style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#linearGradient3480);fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3511"
        width="758.62451"
        height="29.294424"
-       x="-5.0710688"
-       y="2093.5076"
+       x="-9.1116791"
+       y="2086.4365"
        inkscape:export-filename="C:\Users\User\Desktop\LABPro\_books_\PB1702 - M2PY\M2PY\manuscript\images\line.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
