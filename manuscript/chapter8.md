@@ -88,3 +88,46 @@ clase, como si fuera un argumento de función:
 class MiClase(SuperClase):
     # Cuerpo de la clase
 ```
+
+Llamando a la superclase:
+
+```matlab
+classdef MiClase < SuperClase
+
+% Cuerpo de la clase
+
+end
+```
+
+```python
+class MiClase(SuperClase):
+    def __init__(self,args):
+        # Cuerpo de la clase
+        SuperClase.__init__(self,args)
+```
+
+o
+
+```python
+class MiClase(SuperClase):
+    def __init__(self,args):
+        # Cuerpo de la clase
+        super(MiClase,self).__init__(args)
+```
+
+
+### Herencia múltiple
+
+```matlab
+classdef MiClase < SuperClase1 & SuperClase2
+% 
+% Cuerpo de la clase
+% 
+end
+```
+
+
+```python
+class MiClase(SuperClase1, SuperClase2):
+    # Cuerpo de la clase
+```
